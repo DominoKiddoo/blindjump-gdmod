@@ -9,7 +9,7 @@
 	
 	"id": "dominodev.blindjump",
 	"name": "Blind Jumps",
-	"version": "v1.0.0",
+	"version": "v1.0.1",
 	"developer": "dominodev",
 	"description": "GD is too easy! Make every jump blind.",
 	"dependencies": {
