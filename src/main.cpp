@@ -54,6 +54,7 @@ class $modify(BJLayer, PlayLayer) {
 			log::info("Sprite added!");
 		} else {
 			log::error("Failed to load sprite!");
+			return true;
 		}
 
 
