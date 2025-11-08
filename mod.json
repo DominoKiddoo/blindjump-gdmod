@@ -1,0 +1,100 @@
+{
+	"geode": "4.9.0",
+	"gd": {
+		"win": "2.2074",
+		"android": "2.2074",
+		"mac": "2.2074",
+		"ios": "2.2074"
+	},
+	
+	"id": "dominodev.blindjump",
+	"name": "Blind Jumps",
+	"version": "v1.0.0",
+	"developer": "dominodev",
+	"description": "GD is too easy! Make every jump blind.",
+	"dependencies": {
+		"geode.node-ids": ">=v1.20.0"
+	},
+
+	"resources": {
+		"sprites": [
+			"resources/black.png",
+			"resources/white.png",
+			"resources/soggy.png"
+		],
+		"files": [
+			"resources/flashbang.mp3"
+		]
+	},
+
+	"tags": ["gameplay", "joke", "offline"],
+
+	"settings": {
+
+			"disableb": {
+				"type": "bool",
+				"name": "Disable Blinding",
+				"description": "Disables blinding you.",
+				"default": false
+			},
+
+			"jccolour": { 
+				"type": "string",
+				"name": "Blind Colour",
+				"description": "The colour that covers your screen when you are 'blind' (Yes I spell colour with a U, I am Australian. Cry about it)",
+				"default": "Black",
+				"one-of": ["Black", "White", "Soggy"]
+			},
+			
+
+			"fomode": {
+				"type": "bool",
+				"name": "Fade out mode",
+				"description": "Instead of instantly hiding the 'blinder', fade it out instead. (Incompatable with Flashbang Mode)",
+				"default": false,
+				"enable-if": "!flashbangmode"
+			},
+
+			"foduration": {
+				"name": "Fade Out Duration",
+				"description": "How long the fading out from Fade Out mode takes.",
+				"type": "float",
+				"min": 0.5,
+				"max": 5,
+				"default": 1,
+				"enable-if": "fomode && !flashbangmode"
+			},
+
+		    "flashbangmode": {
+				"name": "Flashbang Mode",
+				"description": "Makes it so when you click, instead of blinding you for the duration of your click, it blinds you and slowly fades back",
+				"type": "bool",
+				"default": false,
+				"enable-if": "!fomode"
+
+			},
+
+			"flashbangduration": {
+				"name": "Flashbang Duration",
+				"description": "How long the fading out on the flashbang takes",
+				"type": "float",
+				"min": 0.5,
+				"max": 5,
+				"default": 1,
+				"enable-if": "flashbangmode && !fomode"
+			},
+
+			"fbsound": {
+				"name": "Enable Flashbang Sound",
+				"description": "Plays a sound when you are blinded. This works <cr>without</c> flashbang mode enabled and <cr>**IS HEAVILY NOT RECCOMENDED**</c> (like seriously please do not turn this on unless you want to go deaf)",
+				"type": "bool",
+				"default": false
+			}
+
+
+
+
+
+
+	}
+}
