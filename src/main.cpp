@@ -47,7 +47,7 @@ class $modify(BJLayer, PlayLayer) {
 			jcover->setScaleY(scaleY);
 
 			jcover->setPosition({ winSize.width / 2, winSize.height / 2 }); 
-			jcover->setTag(123456789987654321);    
+			jcover->setID("blindjumpsjcover");    
 			this->addChild(jcover);
 			
 			jcover->setVisible(false);
@@ -66,7 +66,7 @@ class $modify(BJLayer, PlayLayer) {
 	void destroyPlayer(PlayerObject* player, GameObject* cause) {
 
 		if (cause != m_anticheatSpike) {
-			auto jcover = this->getChildByTag(123456789987654321);
+			auto jcover = this->getChildByIDRecursive("blindjumpsjcover");
 			jcover->setVisible(false);
 
 		}
@@ -93,7 +93,7 @@ class $modify(BJHookLayer, GJBaseGameLayer) {
 
 
 			
-			auto jcover = getChildByTag(123456789987654321);
+			auto jcover = getChildByIDRecursive("blindjumpsjcover");
 			auto fbMode = Mod::get()->getSettingValue<bool>("flashbangmode");
 			auto foMode = Mod::get()->getSettingValue<bool>("fomode");
 			auto foduration = Mod::get()->getSettingValue<double>("foduration");
@@ -152,7 +152,7 @@ class $modify(BJHookLayer, GJBaseGameLayer) {
 	}
 
 	void resetjcover() {
-		if (auto jcover = getChildByTag(123456789987654321)) {
+		if (auto jcover = getChildByIDRecursive("blindjumpsjcover")) {
 			if (auto rgbaNode = typeinfo_cast<cocos2d::CCRGBAProtocol*>(jcover)) {
 				rgbaNode->setOpacity(0);
 			}
@@ -161,7 +161,7 @@ class $modify(BJHookLayer, GJBaseGameLayer) {
 	}
 	
 	void resetforfomode() {
-		if (auto jcover = getChildByTag(123456789987654321)) {
+		if (auto jcover = getChildByIDRecursive("blindjumpsjcover")) {
 			if (auto rgbaNode = typeinfo_cast<cocos2d::CCRGBAProtocol*>(jcover)) {
 				rgbaNode->setOpacity(255);
 			}
