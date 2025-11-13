@@ -12,9 +12,6 @@
 	"version": "v1.0.2",
 	"developer": "dominodev",
 	"description": "GD is too easy! Make every jump blind.",
-	"dependencies": {
-		"geode.node-ids": ">=v1.20.0"
-	},
 
 	"resources": {
 		"sprites": [
@@ -30,7 +27,6 @@
 	"tags": ["gameplay", "joke", "offline"],
 
 	"settings": {
-
 			"disableb": {
 				"type": "bool",
 				"name": "Disable Blinding",
@@ -45,12 +41,11 @@
 				"default": "Black",
 				"one-of": ["Black", "White", "Soggy"]
 			},
-			
 
 			"fomode": {
 				"type": "bool",
 				"name": "Fade out mode",
-				"description": "Instead of instantly hiding the 'blinder', fade it out instead. (Incompatable with Flashbang Mode)",
+				"description": "Instead of instantly hiding the 'blinder', fade it out instead. (Incompatible with Flashbang Mode)",
 				"default": false,
 				"enable-if": "!flashbangmode"
 			},
@@ -86,15 +81,9 @@
 
 			"fbsound": {
 				"name": "Enable Flashbang Sound",
-				"description": "Plays a sound when you are blinded. This works <cr>without</c> flashbang mode enabled and <cr>**IS HEAVILY NOT RECCOMENDED**</c> (like seriously please do not turn this on unless you want to go deaf)",
+				"description": "Plays a sound when you are blinded. This works <cr>without</c> flashbang mode enabled and <cr>**IS HEAVILY NOT RECOMMENDED**</c> (like seriously please do not turn this on unless you want to go deaf)",
 				"type": "bool",
 				"default": false
 			}
-
-
-
-
-
-
 	}
 }
