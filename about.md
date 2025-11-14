@@ -13,7 +13,7 @@ If any bugs are found, please report them [here](https://forms.gle/wMdR7EyT1rcKa
 If you have an idea or feedback, write them [here](https://forms.gle/KeTZbZupLtVdpx7A9)
 
 ## Credits
-Thanks to the all the devs in the <cy>Geode SDK Discord Server</cy> for making this stupid mod possible <3
+Thanks to the all the devs in the <cy>Geode SDK Discord Server</cy> for making this stupid mod possible! Especially [hiimjasmine00](https://github.com/hiimjasmine00) for fixing the editor crash bug, and fixing up my code overall.
 
 
 
