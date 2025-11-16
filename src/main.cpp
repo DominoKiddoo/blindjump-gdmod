@@ -72,6 +72,8 @@ class $modify(BJLayer, PlayLayer) {
 			jcover = CCSprite::create("White.png"_spr);
 		} else if (covercolour == "Soggy") {
 			jcover = CCSprite::create("Soggy.png"_spr);
+		} else if (covercolour == "Chinchilla") {
+			jcover = CCSprite::create("Chinchilla.png"_spr);
 		} else {
 			log::error("Sprite failed.");
 			return true;

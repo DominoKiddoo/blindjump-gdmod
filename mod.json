@@ -9,7 +9,7 @@
 	
 	"id": "dominodev.blindjump",
 	"name": "Blind Jumps",
-	"version": "v1.0.3",
+	"version": "v1.0.4",
 	"developer": "dominodev",
 	"description": "GD is too easy! Make every jump blind.",
 
@@ -17,7 +17,8 @@
 		"sprites": [
 			"resources/black.png",
 			"resources/white.png",
-			"resources/soggy.png"
+			"resources/soggy.png",
+			"resources/Chinchilla.png"
 		],
 		"files": [
 			"resources/flashbang.mp3"
@@ -39,7 +40,7 @@
 				"name": "Blind Colour",
 				"description": "The colour that covers your screen when you are 'blind' (Yes I spell colour with a U, I am Australian. Cry about it)",
 				"default": "Black",
-				"one-of": ["Black", "White", "Soggy"]
+				"one-of": ["Black", "White", "Soggy", "Chinchilla"]
 			},
 
 			"fomode": {

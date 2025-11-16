@@ -7,4 +7,7 @@
 # 1.0.3
 - Cleaned up some code and fixed editor crash bug
 
+# 1.0.4
+- Added chinchilla as an inbuilt option (i will add custom image uploading eventually)
+
 
