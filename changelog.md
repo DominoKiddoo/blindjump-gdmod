@@ -10,4 +10,14 @@
 # 1.0.4
 - Added chinchilla as an inbuilt option (i will add custom image uploading eventually)
 
+# 1.0.5
+MAJOR UPDATE WOOOOO!!!
+**Added**
+- Custom images for blinding
+- Button to change settings in pause menu
+- Choose the chance of getting blinded
+- Min/max percent of blinding
+- Added settings for platformer mode (they're buggy though)
+- Removed android/ios support because i tested it on my phone and it didn't work
+
 
