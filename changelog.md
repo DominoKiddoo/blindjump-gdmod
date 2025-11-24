@@ -20,4 +20,8 @@ MAJOR UPDATE WOOOOO!!!
 - Added settings for platformer mode (they're buggy though)
 - Removed android/ios support because i tested it on my phone and it didn't work
 
+# 1.0.6
+- Anroid and ios is back! I fixed bugs lol
+
+
 

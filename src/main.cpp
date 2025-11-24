@@ -115,7 +115,7 @@ class $modify(BJLayer, PlayLayer) {
 			jcover = CCSprite::create("Chinchilla.png"_spr);
 		} else if (covercolour == "Custom") {
 			auto imagePath = Mod::get()->getSettingValue<std::filesystem::path>("cimage");
-			jcover = CCSprite::create(imagePath.string().c_str());
+			jcover = CCSprite::create(geode::utils::string::pathToString(imagePath).c_str());
 		} else {
 			log::error("Sprite failed.");
 			return true;
@@ -150,9 +150,27 @@ class $modify(BJLayer, PlayLayer) {
 
 
 	void destroyPlayer(PlayerObject* player, GameObject* cause) {
-		if (cause != m_anticheatSpike) {
-			m_fields->jcover->setVisible(false);
+		if (this == nullptr) {
+			log::error("skipping safely");
+			return;
 		}
+
+		if (!m_fields->jcover) {
+			log::warn("skipping jcover access");
+			PlayLayer::destroyPlayer(player, cause);
+			return;
+		}
+
+		if (cause != m_anticheatSpike) {
+			if (m_fields->jcover) {
+				// safe to access
+				m_fields->jcover->setVisible(false);
+			} else {
+				log::warn("jcover is null");
+			}
+		}
+
+		// call base implementation last
 		PlayLayer::destroyPlayer(player, cause);
 	}
 };
