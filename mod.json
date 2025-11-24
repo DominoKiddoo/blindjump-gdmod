@@ -15,9 +15,9 @@
 
 	"resources": {
 		"sprites": [
-			"resources/black.png",
-			"resources/white.png",
-			"resources/soggy.png",
+			"resources/Black.png",
+			"resources/White.png",
+			"resources/Soggy.png",
 			"resources/Chinchilla.png",
 			"resources/mlogo.png"
 
@@ -64,7 +64,9 @@
 				"description": "Custom image to blind you with (Requires <cy>Blind Colour</cy> to be set to <cr>Custom</cr>). It also works with <cb>transparent images</cb> just note it **scales to fit**",
 				"default": {
 					"win": "",
-					"mac": ""
+					"mac": "",
+					"android": "",
+					"ios": ""
 				},
 				"control": {
 					"dialog": "open",

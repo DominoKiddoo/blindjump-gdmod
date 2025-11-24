@@ -21,7 +21,7 @@ MAJOR UPDATE WOOOOO!!!
 - Removed android/ios support because i tested it on my phone and it didn't work
 
 # 1.0.6
-- Anroid and ios is back! I fixed bugs lol
+- Anroid and ios is back after ages of fixing bugs
 
 
 
