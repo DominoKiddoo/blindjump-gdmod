@@ -255,7 +255,7 @@ class $modify(BJHookLayer, GJBaseGameLayer) {
 			}
 
 			if (fbsound) {
-				FMODAudioEngine::sharedState()->playEffect("flashbang.mp3"_spr);
+				FMODAudioEngine::get()->playEffect("flashbang.mp3"_spr);
 			}
 			if (bmode == "Fade-out") { 
 				jcover->stopAllActions();
