@@ -1,7 +1,7 @@
 # GD is too easy! Make every jump blind!
 
 With this mod, <cr>you can’t see while you're clicking</cr>, making every jump **blind**. 
-There are also a few settings and modes to play around with!
+There are also many different settings and modes to play around with!
 Have fun (or not)
 
 ## Bug reports

@@ -9,9 +9,12 @@
 	
 	"id": "dominodev.blindjump",
 	"name": "Blind Jumps",
-	"version": "v1.0.6",
+	"version": "v1.0.62",
 	"developer": "dominodev",
 	"description": "GD is too easy! Make every jump blind.",
+	"dependencies": {
+		"geode.node-ids": ">=v1.20.0"
+	},
 
 	"resources": {
 		"sprites": [
