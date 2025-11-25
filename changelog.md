@@ -23,5 +23,11 @@ MAJOR UPDATE WOOOOO!!!
 # 1.0.6
 - Anroid and ios is back after ages of fixing bugs
 
+# 1.0.61
+- Fixed some methods to prevent crashes
+
+# 1.0.62
+- Added dependencies
+
 
 

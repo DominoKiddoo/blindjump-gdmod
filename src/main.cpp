@@ -194,11 +194,12 @@ class $modify(BJHookLayer, GJBaseGameLayer) {
 		if (!jcover) return;
 
 		auto imagePath = Mod::get()->getSettingValue<std::filesystem::path>("cimage");
-
+		
 		auto tex = CCTextureCache::sharedTextureCache()->addImage(
-				imagePath.string().c_str(),
-				false 
+				geode::utils::string::pathToString(imagePath).c_str(),
+				false
 		);
+
 
 		if (tex) {
 				jcover->setTexture(tex);
@@ -254,7 +255,7 @@ class $modify(BJHookLayer, GJBaseGameLayer) {
 			}
 
 			if (fbsound) {
-				FMODAudioEngine::sharedEngine()->playEffect("flashbang.mp3"_spr);
+				FMODAudioEngine::get()->playEffect("flashbang.mp3"_spr);
 			}
 			if (bmode == "Fade-out") { 
 				jcover->stopAllActions();
