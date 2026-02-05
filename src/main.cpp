@@ -25,58 +25,58 @@ $on_mod(Loaded) {
 	std::srand(std::time(nullptr));
 
 	disableblind = mod->getSettingValue<bool>("disableb");
-	listenForSettingChangesV3<bool>("disableb", [](bool value) {
+	listenForSettingChanges<bool>("disableb", [](bool value) {
 		disableblind = value;
 	}, mod);
 
 	covercolour = mod->getSettingValue<std::string>("jccolour");
-	listenForSettingChangesV3<std::string>("jccolour", [](std::string const& value) {
+	listenForSettingChanges<std::string>("jccolour", [](std::string const& value) {
 		covercolour = value;
 	}, mod);
 
 	foduration = mod->getSettingValue<double>("foduration");
-	listenForSettingChangesV3<double>("foduration", [](double value) {
+	listenForSettingChanges<double>("foduration", [](double value) {
 		foduration = value;
 	}, mod);
 
 	fbduration = mod->getSettingValue<double>("flashbangduration");
-	listenForSettingChangesV3<double>("flashbangduration", [](double value) {
+	listenForSettingChanges<double>("flashbangduration", [](double value) {
 		fbduration = value;
 	}, mod);
 
 	fbsound = mod->getSettingValue<bool>("fbsound");
-	listenForSettingChangesV3<bool>("fbsound", [](bool value) {
+	listenForSettingChanges<bool>("fbsound", [](bool value) {
 		fbsound = value;
 	}, mod);
 
 	bmode = mod->getSettingValue<std::string>("bmode");
-	listenForSettingChangesV3<std::string>("bmode", [](std::string value) {
+	listenForSettingChanges<std::string>("bmode", [](std::string value) {
 		bmode = value;
 		
 	}, mod);
 
 	bipm = mod->getSettingValue<bool>("buttoninp");
-	listenForSettingChangesV3<bool>("buttoninp", [](bool value) {
+	listenForSettingChanges<bool>("buttoninp", [](bool value) {
 		bipm = value;
 	}, mod);
 
 	minp = mod->getSettingValue<int>("minp");
-	listenForSettingChangesV3<int>("minp", [](int value) {
+	listenForSettingChanges<int>("minp", [](int value) {
 		minp = value;
 	}, mod);
 
 	maxp = mod->getSettingValue<int>("maxp");
-	listenForSettingChangesV3<int>("maxp", [](int value) {
+	listenForSettingChanges<int>("maxp", [](int value) {
 		maxp = value;
 	}, mod);
 
 	bchance = mod->getSettingValue<int>("bchance");
-	listenForSettingChangesV3<int>("bchance", [](int value) {
+	listenForSettingChanges<int>("bchance", [](int value) {
 		bchance = value;
 	}, mod);
 
 	pmode = mod->getSettingValue<std::string>("pmode");
-	listenForSettingChangesV3<std::string>("pmode", [](std::string value) {
+	listenForSettingChanges<std::string>("pmode", [](std::string value) {
 		pmode = value;
 
 		if (value != "Never") {
